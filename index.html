@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Al-Mu'min</title>
+  <meta name="description" content="Portofolio Al-Mu'min, mahasiswa Informatika Universitas Muhammadiyah Maumere." />
+
+  <!-- Font (opsional, ada cadangan jika offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGASI -->
+  <header class="nav">
+    <a href="#beranda" class="nav__logo">al<span>.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#skill">Skill</a>
+      <a href="#motivasi">Motivasi</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+      <div class="hero__text">
+        <p class="hero__hello">Halo, saya</p>
+        <h1 class="hero__name">Al-Mu'min</h1>
+        <p class="hero__role">
+          Mahasiswa Informatika yang suka
+          <span class="rotator" id="rotator" aria-live="polite">badminton</span>
+        </p>
+        <div class="hero__actions">
+          <a href="#skill" class="btn btn--solid">Lihat skill saya</a>
+          <a href="#kontak" class="btn btn--line">Hubungi saya</a>
+        </div>
+      </div>
+
+      <!-- Kartu identitas gaya swatch warna -->
+      <aside class="chip" aria-label="Kartu identitas">
+        <div class="chip__color" id="chipColor">
+          <span class="chip__initial">A</span>
+          <!-- Foto: simpan file bernama foto.jpg di folder yang sama dengan index.html -->
+          <img src="foto.jpg" alt="Foto Al-Mu'min" class="chip__photo" onerror="this.remove()" />
+        </div>
+        <div class="chip__info">
+          <p class="chip__name">Al-Mu'min</p>
+          <p class="chip__meta">Informatika</p>
+          <p class="chip__meta">NIM 20250202051</p>
+          <p class="chip__hex" id="chipHex">#15803D</p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- TENTANG -->
+    <section class="section" id="tentang">
+      <h2 class="section__title">Tentang saya</h2>
+      <div class="about">
+        <p class="about__lead">
+          Saya Al-Mu'min, biasa dipanggil Al. Saya mahasiswa Informatika di
+          Universitas Muhammadiyah Maumere, suka bermain badminton dan mendengarkan musik.
+        </p>
+
+        <dl class="data">
+          <div><dt>Nama lengkap</dt><dd>Al-Mu'min</dd></div>
+          <div><dt>Nama panggilan</dt><dd>Al</dd></div>
+          <div><dt>NIM</dt><dd>20250202051</dd></div>
+          <div><dt>Jurusan</dt><dd>Informatika</dd></div>
+          <div><dt>Kampus</dt><dd>Universitas Muhammadiyah Maumere</dd></div>
+          <div><dt>Hobi</dt><dd>Mendengarkan musik</dd></div>
+          <div><dt>Alamat</dt><dd>Nangahale, Kec. Talibura, Kab. Sikka, Nusa Tenggara Timur</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section class="section section--tint" id="skill">
+      <h2 class="section__title">Skill &amp; hobi</h2>
+      <p class="section__sub">Warna favorit saya hijau. Klik kotak warna untuk menyalin kode warnanya.</p>
+
+      <div class="skill">
+        <div class="skill__main">
+          <h3>Badminton</h3>
+          <p>
+            Badminton melatih kecepatan, ketepatan, dan fokus saat bermain.
+          </p>
+
+          <div class="skill__hobi">
+            <h4>Hobi</h4>
+            <ul class="tags">
+              <li>Mendengarkan musik</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="palette" id="palette" role="list" aria-label="Palet warna hijau">
+          <button class="swatch" role="listitem" style="--c:#15803D" data-hex="#15803D"><span>#15803D</span></button>
+          <button class="swatch" role="listitem" style="--c:#86D9A3" data-hex="#86D9A3"><span>#86D9A3</span></button>
+          <button class="swatch" role="listitem" style="--c:#DCF5E4" data-hex="#DCF5E4"><span>#DCF5E4</span></button>
+          <button class="swatch" role="listitem" style="--c:#0B4F2A" data-hex="#0B4F2A"><span>#0B4F2A</span></button>
+          <button class="swatch" role="listitem" style="--c:#07281A" data-hex="#07281A"><span>#07281A</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTIVASI -->
+    <section class="quote" id="motivasi">
+      <p class="quote__label">Motivasi saya</p>
+      <blockquote class="quote__text">
+        Belajarlah seperti Surah Al-Ikhlas. Namanya saja yang ikhlas, namun tidak dengan isinya.
+      </blockquote>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="section" id="kontak">
+      <h2 class="section__title">Kontak &amp; alamat</h2>
+      <div class="contact">
+        <div class="contact__card">
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/6282236289011" target="_blank" rel="noopener">082236289011</a></p>
+        </div>
+        <div class="contact__card">
+          <h3>E-mail</h3>
+          <p><a href="mailto:wainta3112desember.id@gmail.com">wainta3112desember.id@gmail.com</a></p>
+        </div>
+        <div class="contact__card">
+          <h3>Alamat</h3>
+          <p>Nangahale, Kec. Talibura, Kab. Sikka, Nusa Tenggara Timur</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Al-Mu'min · Informatika, Universitas Muhammadiyah Maumere</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
